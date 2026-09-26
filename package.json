@@ -62,7 +62,8 @@
     "lint:fix": "eslint ./src --fix",
     "test": "vitest run",
     "test:watch": "vitest",
-    "prepublishOnly": "pnpm clean && pnpm build"
+    "prepublishOnly": "pnpm clean && pnpm build",
+    "prepare": "npm run copyfiles && npm run build:types && npm run build:swc"
   },
   "peerDependencies": {
     "payload": ">=3.81.0",
